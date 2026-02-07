@@ -83,13 +83,13 @@ export default function Mainsidebar() {
         <CalendarCheck2 className="text-neutral-700 dark:text-white/70 h-5 w-5 flex-shrink-0" />
       ),
     },
-    {
-      label: 'AI',
-      href: 'https://conferio-ai.vercel.app',
-      icon: (
-        <Bot className="text-neutral-700  dark:text-white/70 h-5 w-5 flex-shrink-0" />
-      ),
-    },
+    // {
+    //   label: 'AI',
+    //   href: 'https://conferio-ai.vercel.app',
+    //   icon: (
+    //     <Bot className="text-neutral-700  dark:text-white/70 h-5 w-5 flex-shrink-0" />
+    //   ),
+    // },
 
     {
       label: 'Calendar',
