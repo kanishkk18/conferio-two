@@ -64,6 +64,16 @@ export default function MeetingRoom() {
           displayName: sessionUser.name,
           email: sessionUser.email,
         }}
+
+          onApiReady={(api) => {
+          // 🔴 Redirect when call ends (hang up)
+          api.addListener("videoConferenceLeft", () => {
+            router.push("/meetings/page"); 
+            // or full URL:
+            // window.location.href = "https://conferio.vercel.app/call-ended";
+          });
+        }}
+        
         getIFrameRef={(node) => {
           node.style.height = "100%";
           node.style.width = "100%";
